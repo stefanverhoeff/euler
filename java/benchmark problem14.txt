@@ -1,0 +1,16 @@
+with 100_000
+
+original: 15.750000
+no status: 15.562000
+no storing/returning chain: 15.453000
+inline next: 11.343000	(10753849 loops)
+with LUT: 1.297000 	(521422 loops)
+more LUT: 1.344000	(521422 loops)
+hash instead of array (needed to scale): 2.656000
+no converting to string: 1.594000
+no generating chain + fix LUT: 1.375000 (531706 loops)
+
+with 1_000_000
+hash instead of array (needed to scale): 31.813000
+no converting to string: 17.625000
+no generating chain + fix LUT: 14.937000

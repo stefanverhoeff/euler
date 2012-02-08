@@ -1,0 +1,23 @@
+Start:
+  %   cumulative   self              self     total
+ time   seconds   seconds    calls  ms/call  ms/call  name
+ 51.63     1.22      1.22        6   203.00   362.00  Integer#times
+ 15.85     1.59      0.37     4804     0.08     0.10  Node#==
+  9.24     1.81      0.22     7014     0.03     0.03  Kernel.==
+  5.38     1.94      0.13     7398     0.02     0.02  Fixnum#+
+  5.34     2.06      0.13    13004     0.01     0.01  Array#[]
+  5.26     2.19      0.12       67     1.85    40.31  Range#each
+  2.67     2.25      0.06     4692     0.01     0.01  Array#<<
+  2.63     2.31      0.06     3466     0.02     0.02  Fixnum#<
+
+Persistent array:
+  %   cumulative   self              self     total
+ time   seconds   seconds    calls  ms/call  ms/call  name
+ 56.94     1.47      1.47        6   244.67   398.67  Integer#times
+ 12.18     1.78      0.31    13046     0.02     0.02  Array#[]
+ 10.40     2.05      0.27    12090     0.02     0.02  Fixnum#+
+  7.21     2.24      0.19     4804     0.04     0.05  Node#==
+  4.19     2.34      0.11       67     1.61    44.03  Range#each
+  3.03     2.42      0.08     3466     0.02     0.02  Fixnum#<
+  2.40     2.48      0.06     4858     0.01     0.01  Array#[]=
+
